@@ -3,7 +3,6 @@
 @import url(./__text/popup__text.css);
 @import url(./__close/popup__close.css);
 @import url(./__save/popup__save.css);
-@import url(./_opened/popup_opened.css);
 
 .popup {
   display: none;
@@ -17,8 +16,3 @@
   z-index: 1;
   background: rgba(0, 0, 0, .5);
 }
-
-.popup_opened {
-  display: flex;
-}
-
