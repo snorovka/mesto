@@ -3,7 +3,6 @@
   background: url(../../../images/plus.png) no-repeat center;
   border: 2px solid white;
   width: 150px;
-  /*width: 100%;*/
   height: 50px;
   padding: 0;
   margin: 0;
@@ -13,4 +12,12 @@
 .profile__add-button:hover {
   cursor: url(../../../images/cursor.png), pointer;
   opacity: .6;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__add-button {
+    max-width: 582px;
+    width: 100%;
+    margin-top: 36px;
+  }
 }
