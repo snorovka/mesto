@@ -1,0 +1,38 @@
+@import url(./__logo/header__logo.css);
+@import url(./__line/header__line.css);
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 45px 199px 0 199px;
+  width: 100%;
+  max-width: 1280px;
+  }
+
+/*
+ @media screen and (min-width: 1280px) {
+  .header {
+    padding: 28px 0 56px 0;
+   }
+  }
+ */
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 28px 27px 0 27px;
+      border: 0;
+      border-bottom: 1px solid rgba(84, 84, 84, .7);
+  }
+ }
+
+ /*@media screen and (max-width: 425px) {
+  .header {
+    padding: 28px 27px 0 27px;
+   }
+ }*/
+
+
+
+

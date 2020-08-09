@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место</title>
+  <meta name="description" content="Проект 'Место' ::: Ю. Зорина ::: Яндекс.Практикум">
+  <meta name="keywords" content="html, css">
+  <meta name="author" content="Юлия Зорина">
+</head>
+
+<body>
+  <div class="page">
+
+    <!--шапка-->
+    <header class="header">
+        <img class="header__logo" src="./images/mesto_white.png" alt="логотип - Место">
+        <div class="header__line"></div>
+    </header>
+
+    <main class="content">
+
+      <!--редактируемые профили-->
+      <section class="profile">
+        <figure class="profile__container">
+          <img class="profile__avatar" src="./images/cousteau.jpg" alt="Жак-Ив Кусто">
+          <figcaption class="profile__info">
+            <div class="profile__heading">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button" aria-label="Редактировать"></button>
+            </div>
+            <p class="profile__job">Исследователь океана</p>
+          </figcaption>
+        </figure>
+        <button class="profile__add-button" aria-label="Добавить"></button>
+      </section>
+      <!--конец редактируемых профилей-->
+
+      <!--галерея карточки-->
+        <section class="photo-grid">
+          <div class="cards">
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__dombay.png" alt="Домбай">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Домбай</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__karachay.png" alt="Карачаево-Черкессия">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Карачаевск</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__elbrus.png" alt="Эльбрус">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Гора Эльбрус</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__suzdal.jpg" alt="Суздаль">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Золотое кольцо России</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__sergiev_posad.jpg" alt="Сергиев Посад">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Сергиев Посад</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+            <figure class="cards__item">
+              <img class="cards__image" src="./images/cards__suzdal1.jpg" alt="Суздаль">
+              <figcaption class="cards__caption">
+                <h3 class="cards__title">Суздаль</h3>
+                <div class="cards__like"></div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      <!--конец галереи карточек-->
+
+    </main>
+
+    <!--подвал-->
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" aria-label="Закрыть окно редактирования"></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <input type="text" placeholder="Имя" class="popup__text">
+        <input type="text" placeholder="Профессия" class="popup__text">
+        <button class="popup__save" aria-label="Сохранить изменения">Сохранить</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./scripts/main.js"></script>
+
+</body>
+</html>

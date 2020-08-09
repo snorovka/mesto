@@ -1,0 +1,24 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/fonts/fonts.css);
+
+/*блок всей страницы*/
+@import url(../blocks/page/page.css);
+
+/*шапка*/
+@import url(../blocks/header/header.css);
+
+/*редактируемые профили*/
+@import url(../blocks/profile/profile.css);
+
+/*карточки*/
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/cards/cards.css);
+
+/*подвал*/
+@import url(../blocks/footer/footer.css);
+
+/*выпадающее окно*/
+@import url(../blocks/popup/popup.css);
+
+/** {border: 1px solid green;}*/

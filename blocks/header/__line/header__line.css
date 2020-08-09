@@ -1,0 +1,14 @@
+.header__line {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 40px 0 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+  }
+
+  @media screen and (max-width: 768px) {
+    .header__line {
+      display: none;
+     }
+   }

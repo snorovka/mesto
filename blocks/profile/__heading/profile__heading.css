@@ -1,0 +1,6 @@
+.profile__heading {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: row;
+}
