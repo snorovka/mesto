@@ -11,7 +11,10 @@ let profileName = document.querySelector('.profile__name');
 let profileJob = document.querySelector('.profile__job');
 
 //массив полей ввода popup
-let inputs = document.querySelectorAll('input');
+//let inputs = document.querySelectorAll('input');
+
+let inputName = document.querySelector('#name');
+let inputJob = document.querySelector('#job');
 
 //открытие - закрытие popup
 const popupToggle = function (event) {
@@ -30,8 +33,8 @@ popupEditButton.addEventListener ('click', popupOpen);
 //сохранение полей profile по кнопке "сохранить"
 function formSubmitHandler (evt) {
   evt.preventDefault();
-  profileName.textContent = inputs[0].value;
-  profileJob.textContent = inputs[1].value;
+  profileName.textContent = inputName.value;
+  profileJob.textContent = inputJob.value;
   popupToggle();
 }
 popupSaveButton.addEventListener('click', formSubmitHandler);

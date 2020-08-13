@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   transform: translate(43px, -43px);
-  background: url('../../../images/close.png') no-repeat center;
+  background-color: transparent;
   width: 47px;
   height: 47px;
   padding: 0;
