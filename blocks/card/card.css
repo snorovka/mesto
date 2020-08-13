@@ -1,3 +1,8 @@
+@import url(./__image/card__image.css);
+@import url(./__caption/card__caption.css);
+@import url(./__title/card__title.css);
+@import url(./__like/card__like.css);
+
 .card {
  box-sizing: border-box;
  width: 282px;

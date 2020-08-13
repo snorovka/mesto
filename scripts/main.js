@@ -18,13 +18,13 @@ let inputName = document.querySelector('#name');
 let inputJob = document.querySelector('#job');
 
 //открытие - закрытие popup
-const popupToggle = function (event) {
+const popupToggle = function () {
   popup.classList.toggle('popup_opened');
 }
 popupCloseButton.addEventListener ('click', popupToggle);
 
 //редактирование полей profile по кнопке "редактировать"
-const popupOpen = function (e) {
+const popupOpen = function () {
   inputName.value = profileName.textContent;
   inputJob.value = profileJob.textContent;
   popupToggle();
