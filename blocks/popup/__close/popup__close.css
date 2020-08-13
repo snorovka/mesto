@@ -12,6 +12,6 @@
 }
 
 .popup__close:hover {
-  cursor: url(../../../images/cursor.png), pointer;
+  cursor: url(../../../images/cursor.svg), pointer;
   opacity: .6;
 }

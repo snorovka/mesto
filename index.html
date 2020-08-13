@@ -15,8 +15,7 @@
 
     <!--шапка-->
     <header class="header">
-        <img class="header__logo" src="./images/mesto_white.png" alt="логотип - Место">
-        <div class="header__line"></div>
+        <img class="header__logo" src="./images/mesto_white.svg" alt="логотип - Место">
     </header>
 
     <main class="content">
@@ -46,75 +45,49 @@
       <!--конец редактируемых профилей-->
 
       <!--галерея карточки-->
-        <section class="photo-grid">
-          <div class="cards">
-            <figure class="cards__item">
+        <section class="cards">
+          <article class="card">
               <img class="cards__image" src="./images/cards__dombay.png" alt="Домбай">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Домбай</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="cards__item">
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
+            <article class="card">
               <img class="cards__image" src="./images/cards__karachay.png" alt="Карачаево-Черкессия">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Карачаевск</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="cards__item">
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
+            <article class="card">
               <img class="cards__image" src="./images/cards__elbrus.png" alt="Эльбрус">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Гора Эльбрус</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="cards__item">
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
+            <article class="card">
               <img class="cards__image" src="./images/cards__suzdal.png" alt="Суздаль">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Золотое кольцо России</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="cards__item">
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
+            <article class="card">
               <img class="cards__image" src="./images/cards__sergiev_posad.png" alt="Сергиев Посад">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Сергиев Посад</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-            <figure class="cards__item">
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
+            <article class="card">
               <img class="cards__image" src="./images/cards__suzdal1.png" alt="Суздаль">
-              <figcaption class="cards__caption">
+              <div class="cards__caption">
                 <h3 class="cards__title">Суздаль</h3>
-                <div class="cards__like">
-                  <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.8005 1.95849L18.8023 1.96024C20.7437 3.88233 20.7462 7.03905 18.8005 8.98466L10.361 17.4238L1.94628 9.00951C1.94569 9.00892 1.94511 9.00832 1.94453 9.00772C1.0188 8.06185 0.5 6.81051 0.5 5.48217C0.5 4.14855 1.00122 2.89987 1.94265 1.95849L1.94266 1.95849L1.94441 1.95672C3.86629 0.0157068 7.02186 0.0131363 8.96748 1.97793L8.96922 1.97967L10.0074 3.01784L10.3646 3.37496L10.7181 3.01425L11.7545 1.95673C13.6994 0.0138381 16.8563 0.014425 18.8005 1.95849Z" stroke="black"/>
-                  </svg>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+                <button type="button" class="cards__like" aria-label="Добавить в избранные"></button>
+              </div>
+            </article>
         </section>
       <!--конец галереи карточек-->
 
@@ -122,10 +95,12 @@
 
     <!--подвал-->
     <footer class="footer">
-      <p class="footer__copyright">© 2020 Mesto Russia</p>
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
+    <!--конец подвала-->
 
-    <div class="popup">
+    <!--выпадающее окно редактирования-->
+    <form class="popup" id="profile-edit">
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Закрыть окно редактирования">
           <svg fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,11 +108,11 @@
           </svg>
         </button>
         <h3 class="popup__title">Редактировать профиль</h3>
-        <input type="text" placeholder="Имя" class="popup__text" id="name">
-        <input type="text" placeholder="Профессия" class="popup__text" id="job">
-        <button class="popup__save" aria-label="Сохранить изменения">Сохранить</button>
+        <input type="text" placeholder="Имя" class="popup__text" id="name" name="name">
+        <input type="text" placeholder="Профессия" class="popup__text" id="job" name="job">
+        <button class="popup__save">Сохранить</button>
       </div>
-    </div>
+    </form>
 
   </div>
 

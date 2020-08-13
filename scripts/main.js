@@ -6,13 +6,14 @@ let popupEditButton = document.querySelector('.profile__edit-button');
 let popupCloseButton = popup.querySelector('.popup__close');
 let popupSaveButton = popup.querySelector('.popup__save');
 
+//переменная формы
+let popupForm = document.querySelector('#profile-edit');
+
 //переменные полей profile
 let profileName = document.querySelector('.profile__name');
 let profileJob = document.querySelector('.profile__job');
 
-//массив полей ввода popup
-//let inputs = document.querySelectorAll('input');
-
+//переменные полей ввода popup
 let inputName = document.querySelector('#name');
 let inputJob = document.querySelector('#job');
 
@@ -24,8 +25,8 @@ popupCloseButton.addEventListener ('click', popupToggle);
 
 //редактирование полей profile по кнопке "редактировать"
 const popupOpen = function (e) {
-  inputs[0].value = profileName.textContent;
-  inputs[1].value = profileJob.textContent;
+  inputName.value = profileName.textContent;
+  inputJob.value = profileJob.textContent;
   popupToggle();
 }
 popupEditButton.addEventListener ('click', popupOpen);
@@ -37,4 +38,4 @@ function formSubmitHandler (evt) {
   profileJob.textContent = inputJob.value;
   popupToggle();
 }
-popupSaveButton.addEventListener('click', formSubmitHandler);
+popupForm.addEventListener('submit', formSubmitHandler);
