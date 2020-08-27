@@ -38,6 +38,7 @@
 
       <!--галерея карточки-->
         <section class="cards">
+          <!--
           <article class="card">
               <img class="card__image" src="./images/cards__dombay.png" alt="Домбай">
               <div class="card__caption">
@@ -80,7 +81,21 @@
                 <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
               </div>
             </article>
+          -->
         </section>
+
+        <!--шаблон карточек-->
+        <template id="cardTemplate">
+          <article class="card">
+            <img class="card__image" alt="Суздаль">
+            <div class="card__caption">
+              <h3 class="card__title"></h3>
+              <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
+            </div>
+          </article>
+        </template>
+        <!--конец шаблона карточек-->
+
       <!--конец галереи карточек-->
 
     </main>

@@ -22,9 +22,29 @@ const initialCards = [
   },
   {
       name: 'Байкал',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+      link: './images/cards__dombay.png'
   }
 ];
+
+console.log(initialCards);
+
+//контейнер массива карточек
+const initialCardsContainer = document.querySelector(".cards");
+
+//добавление карточек в контейнер
+const addCardToContainer = (cardItem) => {
+  const cardElement = document.querySelector("#cardTemplate").content.cloneNode(true);
+
+  cardElement.querySelector(".card__title").textContent = cardItem.name;
+  cardElement.querySelector(".card__image").src = cardItem.link;
+
+  initialCardsContainer.append(cardElement);
+}
+
+
+initialCards.forEach(addCardToContainer);
+
+
 
 //переменная всплывающего окна popup
 let popup = document.querySelector('.popup');
