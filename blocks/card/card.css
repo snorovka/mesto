@@ -2,6 +2,7 @@
 @import url(./__caption/card__caption.css);
 @import url(./__title/card__title.css);
 @import url(./__like/card__like.css);
+@import url(./__delete/card__delete.css);
 
 .card {
  box-sizing: border-box;

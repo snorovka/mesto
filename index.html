@@ -32,7 +32,7 @@
             <p class="profile__job">Исследователь океана</p>
           </figcaption>
         </figure>
-        <button type="button" class="profile__add-button" aria-label="Добавить"></button>
+        <button type="button" class="profile__add-button" aria-label="Добавить карточку"></button>
       </section>
       <!--конец редактируемых профилей-->
 
@@ -91,6 +91,7 @@
             <div class="card__caption">
               <h3 class="card__title"></h3>
               <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
+              <button type="button" class="card__delete" aria-label="Удалить">Delete</button>
             </div>
           </article>
         </template>
@@ -106,7 +107,20 @@
     </footer>
     <!--конец подвала-->
 
-    <!--выпадающее окно редактирования-->
+
+   <!--форма добавления карточки в контейнер cards-->
+   <form class="popup" id="card-add" name="card-add">
+    <div class="popup__container">
+      <button type="button" class="popup__close" aria-label="Закрыть окно"></button>
+      <h3 class="popup__title">Новое место</h3>
+      <input class="popup__text" type="text" placeholder="Название" id="card-name" name="card-name">
+      <input class="popup__text" type="text" placeholder="Ссылка на картинку" id="card-image" name="card-image">
+      <button class="popup__save">Создать</button>
+    </div>
+  </form>
+
+
+    <!--выпадающее окно редактирования profile-->
     <form class="popup" id="profile-edit" name="profile-edit">
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Закрыть окно редактирования"></button>
@@ -117,16 +131,7 @@
       </div>
     </form>
 
-    <!--выпадающее окно добавления карточки-->
-    <form class="popup" id="profile-add" name="profile-add">
-      <div class="popup__container">
-        <button type="button" class="popup__close" aria-label="Закрыть окно"></button>
-        <h3 class="popup__title">Новое место</h3>
-        <input class="popup__text" type="text" placeholder="Название карточки места" id="card-name" name="card-name">
-        <input class="popup__text" type="text" placeholder="Ссылка на картинку" id="card-link" name="card-link">
-        <button class="popup__save">Создать</button>
-      </div>
-    </form>
+
 
   </div>
 

@@ -21,8 +21,8 @@ const initialCards = [
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
   },
   {
-      name: 'Байкал',
-      link: './images/cards__dombay.png'
+      name: 'Воронеж',
+      link: 'https://images.unsplash.com/photo-1567345242672-1c9cd67cb860?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80'
   }
 ];
 
@@ -30,34 +30,18 @@ console.log(initialCards);
 
 //контейнер массива карточек
 const initialCardsContainer = document.querySelector(".cards");
+const addCardForm = document.querySelector('#card-add');
 
-//добавление карточек в контейнер
-const addCardToContainer = (cardItem) => {
-  const cardElement = document.querySelector("#cardTemplate").content.cloneNode(true);
-
-  cardElement.querySelector(".card__title").textContent = cardItem.name;
-  cardElement.querySelector(".card__image").src = cardItem.link;
-
-  initialCardsContainer.append(cardElement);
-}
-
-
-initialCards.forEach(addCardToContainer);
-
-
-
-//переменная всплывающего окна popup
-let popup = document.querySelector('.popup');
+//переменные форм popup
+let popupProfile = document.querySelector('#profile-edit');
+let popupCard = document.querySelector('#card-add');
 
 //переменные и константы кнопок
 let popupEditButton = document.querySelector('.profile__edit-button');
-let popupCloseButton = popup.querySelector('.popup__close');
-let popupSaveButton = popup.querySelector('.popup__save');
+let popupCloseButton = popupProfile.querySelector('.popup__close');
+let popupSaveButton = popupProfile.querySelector('.popup__save');
 
-const popupAddButton = popup.querySelector('.profile__add-button');
-
-//переменная формы
-let popupForm = document.querySelector('#profile-edit');
+const cardAddButton = document.querySelector('.profile__add-button');
 
 //переменные полей profile
 let profileName = document.querySelector('.profile__name');
@@ -68,16 +52,67 @@ let inputName = document.querySelector('#name');
 let inputJob = document.querySelector('#job');
 
 
-//переменные полей карточки card
-const cardName = document.querySelector('#card-name');
-const cardLink = document.querySelector('#card-link');
 
+//добавление карточек в контейнер
+  const addCardToContainer = (cardItem) => {
+  const cardElement = document.querySelector("#cardTemplate").content.cloneNode(true);
 
-//открытие - закрытие popup
-const popupToggle = function () {
-  popup.classList.toggle('popup_opened');
+  cardElement.querySelector(".card__title").textContent = cardItem.name;
+  cardElement.querySelector(".card__image").src = cardItem.link;
+
+  //удаление карточки
+  cardElement.querySelector('.card__delete').addEventListener ('click', event => {
+    const card = event.target.closest('.card');
+    card.remove()
+  });
+
+  initialCardsContainer.append(cardElement);
 }
-popupCloseButton.addEventListener ('click', popupToggle);
+initialCards.forEach(addCardToContainer);
+
+//переменные полей формы добавления карточки card
+//const inputCardName = document.querySelector('#card-name');
+//const inputCardImage = document.querySelector('#card-image');
+
+//функция открытия-закрытие формы popup
+function popupToggle() {
+  popupProfile.classList.toggle('.popup_opened');
+}
+
+//popupCloseButton.addEventListener ('click', function() {
+  //popupToggle(popupCard)
+  //});
+
+//открытие формы добавления карточки card по кнопке "+"
+//cardAddButton.addEventListener('click', function() {
+  //popupToggle(popupCard)
+  //});
+
+//const cardAdd = function () {
+  //inputName.value = profileName.textContent;
+  //inputJob.value = profileJob.textContent;
+  //popupToggle();
+//}
+//cardAddButton.addEventListener ('click', cardAdd);
+
+//добавление карточки card по кнопке "+"
+//addCardForm.addEventListener('submit', event => {
+  //event.preventDefault();
+
+  //const cardEl = document.querySelector(".card");
+  //console.log(cardEl);
+
+  //cardEl = addCardForm.querySelector('#card-name').value;
+  //cardEl.link = addCardForm.querySelector('#card-image').value;
+  //console.log(cardEl);
+
+  //addCardToContainer(cardEl);
+
+  //addCardForm.reset();
+  //popupToggle();
+
+//});
+
 
 //редактирование полей profile по кнопке "редактировать"
 const popupOpen = function () {
@@ -94,16 +129,4 @@ function formSubmitHandler (evt) {
   profileJob.textContent = inputJob.value;
   popupToggle();
 }
-popupForm.addEventListener ('submit', formSubmitHandler);
-
-
-//добавление карточки card по кнопке "+"
-//popupAddButton.addEventListener ('click', popupToggle);
-
-//function formSubmitHandler (evt) {
-  //evt.preventDefault();
-  //profileName.textContent = inputName.value;
-  //profileJob.textContent = inputJob.value;
-  //popupToggle();
-//}
-//popupForm.addEventListener('submit', formSubmitHandler);
+popupProfile.addEventListener ('submit', formSubmitHandler);
