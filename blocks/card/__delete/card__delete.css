@@ -2,10 +2,9 @@
   box-sizing: border-box;
   border: none;
   background-size: 100%;
-  background-color: darkmagenta;
-  background: url("../../../images/icon-delete1.svg") no-repeat center;
-  /*width: 21px;
-  height: 18px;*/
+  background: url("../../../images/icon-del.svg") no-repeat center;
+  /*width: 26px;
+  height: 26px;*/
   padding: 10px;
   margin: 0;
   transition: opacity .5s ease-in-out;
