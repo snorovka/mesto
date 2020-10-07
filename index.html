@@ -1,115 +1,71 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>Место</title>
-  <meta name="description" content="Проект 'Место' ::: Ю. Зорина ::: Яндекс.Практикум">
+  <title>Place</title>
+  <meta name="description" content="Project 'Place'">
   <meta name="keywords" content="html, css">
-  <meta name="author" content="Юлия Зорина">
+  <meta name="author" content="Yulia Zorina">
 </head>
 
 <body>
   <div class="page">
 
-    <!--шапка-->
+    <!--header-->
     <header class="header">
-        <img class="header__logo" src="./images/mesto_white.svg" alt="логотип - Место">
+      <h1 class="header__logo">Place</h1>
     </header>
 
     <main class="content">
 
-      <!--редактируемые профили-->
+      <!--profile-->
       <section class="profile">
         <figure class="profile__container">
-          <img class="profile__avatar" src="./images/cousteau.jpg" alt="Жак-Ив Кусто">
+          <img class="profile__avatar" src="./images/cousteau.jpg" alt="Jacques-Yves Cousteau">
           <figcaption class="profile__info">
             <div class="profile__heading">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <button type="button" class="profile__edit-button" aria-label="Редактировать"></button>
+              <h2 class="profile__name">Jacques-Yves Cousteau</h2>
+              <button type="button" class="profile__edit-button" aria-label="Edit"></button>
             </div>
-            <p class="profile__job">Исследователь океана</p>
+            <p class="profile__job">Ocean researcher</p>
           </figcaption>
         </figure>
-        <button type="button" class="profile__add-button" aria-label="Добавить карточку"></button>
+        <button type="button" class="profile__add-button" aria-label="Add card"></button>
       </section>
-      <!--конец редактируемых профилей-->
+      <!--end of profile-->
 
-      <!--галерея карточки-->
-        <section class="cards">
-          <!--
-          <article class="card">
-              <img class="card__image" src="./images/cards__dombay.png" alt="Домбай">
-              <div class="card__caption">
-                <h3 class="card__title">Домбай</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/cards__karachay.png" alt="Карачаево-Черкессия">
-              <div class="card__caption">
-                <h3 class="card__title">Карачаевск</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/cards__elbrus.png" alt="Эльбрус">
-              <div class="card__caption">
-                <h3 class="card__title">Гора Эльбрус</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/cards__suzdal.png" alt="Суздаль">
-              <div class="card__caption">
-                <h3 class="card__title">Золотое кольцо России</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/cards__sergiev_posad.png" alt="Сергиев Посад">
-              <div class="card__caption">
-                <h3 class="card__title">Сергиев Посад</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-            <article class="card">
-              <img class="card__image" src="./images/cards__suzdal1.png" alt="Суздаль">
-              <div class="card__caption">
-                <h3 class="card__title">Суздаль</h3>
-                <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              </div>
-            </article>
-          -->
-        </section>
+      <!--cards gallerey-->
+        <!--<section class="cards">
+        </section>-->
 
-        <!--шаблон карточек-->
+        <!--card template-->
         <template id="cardTemplate">
           <article class="card">
-            <img class="card__image" alt="Суздаль">
+            <img class="card__image" alt="Place photo">
             <div class="card__caption">
               <h3 class="card__title"></h3>
-              <button type="button" class="card__like" aria-label="Добавить в избранные"></button>
-              <button type="button" class="card__delete" aria-label="Удалить">Delete</button>
+              <button type="button" class="card__like" aria-label="Add to favourites"></button>
+              <button type="button" class="card__delete" aria-label="Delete"></button>
             </div>
           </article>
         </template>
-        <!--конец шаблона карточек-->
+        <!--end of card template-->
 
-      <!--конец галереи карточек-->
+      <!--end of cards gallerey-->
 
     </main>
 
-    <!--подвал-->
+    <!--footer-->
     <footer class="footer">
-      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+      <p class="footer__copyright">&copy; 2020 Place</p>
     </footer>
-    <!--конец подвала-->
+    <!--end of footer-->
 
 
    <!--форма добавления карточки в контейнер cards-->
-   <form class="popup" id="card-add" name="card-add">
+   <!--<form class="popup" id="card-add" name="card-add">
     <div class="popup__container">
       <button type="button" class="popup__close" aria-label="Закрыть окно"></button>
       <h3 class="popup__title">Новое место</h3>
@@ -117,17 +73,17 @@
       <input class="popup__text" type="text" placeholder="Ссылка на картинку" id="card-image" name="card-image">
       <button class="popup__save">Создать</button>
     </div>
-  </form>
+  </form>-->
 
 
-    <!--выпадающее окно редактирования profile-->
+    <!--profile popup-->
     <form class="popup" id="profile-edit" name="profile-edit">
       <div class="popup__container">
-        <button type="button" class="popup__close" aria-label="Закрыть окно редактирования"></button>
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <input class="popup__text" type="text" placeholder="Имя" id="name" name="name">
-        <input class="popup__text" type="text" placeholder="Профессия" id="job" name="job">
-        <button class="popup__save">Сохранить</button>
+        <button type="button" class="popup__close" aria-label="Close popup"></button>
+        <h3 class="popup__title">Edit profile</h3>
+        <input class="popup__text" type="text" placeholder="Name" id="name" name="name">
+        <input class="popup__text" type="text" placeholder="Job" id="job" name="job">
+        <button class="popup__save">Save</button>
       </div>
     </form>
 

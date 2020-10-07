@@ -22,7 +22,7 @@ const initialCards = [
   },
   {
       name: 'Georgia',
-      link: './images/cards_georgia1.png'
+      link: './images/cards_georgia.png'
   }
 ];
 
