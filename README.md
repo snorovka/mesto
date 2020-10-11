@@ -1,17 +1,12 @@
-﻿# Проект 4: Место
+﻿# Project Place
 
-## Cоздание интерактивного сайта о путешествиях по России.
+## Interactive website about travelling over the world.
 
-* [Ссылка проекта на GitHub](https://snorovka.github.io/mesto/)
+* [Link on GitHub](https://snorovka.github.io/place/)
 
-**Адаптивная вёрстка и интерактив реализованы с помощью:**
+**Adaptive layout and interactivity made with:**
 
  * html,
  * css,
  * javascript
 
-**Планируется расширить интерактив:**
-
- * добавление статей об известных путешественниках-исследователях;
- * добавление флажка "like" фотографиям интересных мест России;
- * добавление фотографий в галерею.

@@ -48,7 +48,7 @@ let profileJob = document.querySelector('.profile__job');
 let inputName = document.querySelector('#name');
 let inputJob = document.querySelector('#job');
 
-//add cards from array to container
+//add cards from array to container cards
   const addCardToContainer = (cardItem) => {
   const cardElement = document.querySelector("#cardTemplate").content.cloneNode(true);
 
@@ -72,7 +72,7 @@ initialCards.forEach(addCardToContainer);
 }
 popupCloseButton.addEventListener ('click', popupToggle);
 
-//edit profile textareas
+//default profile textareas
 const popupOpen = function () {
   inputName.value = profileName.textContent;
   inputJob.value = profileJob.textContent;
